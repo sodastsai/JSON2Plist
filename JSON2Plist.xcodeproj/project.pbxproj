@@ -51,7 +51,7 @@
 		FE0CA22D13839360001D4B0B = {
 			isa = PBXGroup;
 			children = (
-				FE0CA2671383A4EB001D4B0B /* J2P.icns */,
+				FE3101731383AAB900ED614F /* Resources */,
 				FE0CA24213839360001D4B0B /* JSON2Plist */,
 				FE0CA23B13839360001D4B0B /* Frameworks */,
 				FE0CA23913839360001D4B0B /* Products */,
@@ -108,6 +108,14 @@
 				FE0CA24B13839360001D4B0B /* Credits.rtf */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FE3101731383AAB900ED614F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA2671383A4EB001D4B0B /* J2P.icns */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
