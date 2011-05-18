@@ -1,0 +1,285 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE0CA23D13839360001D4B0B /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FE0CA23C13839360001D4B0B /* Cocoa.framework */; };
+		FE0CA24713839360001D4B0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE0CA24513839360001D4B0B /* InfoPlist.strings */; };
+		FE0CA24A13839360001D4B0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0CA24913839360001D4B0B /* main.m */; };
+		FE0CA24D13839360001D4B0B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FE0CA24B13839360001D4B0B /* Credits.rtf */; };
+		FE0CA25013839360001D4B0B /* JSON2PlistAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */; };
+		FE0CA25313839360001D4B0B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0CA25113839360001D4B0B /* MainMenu.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE0CA23813839360001D4B0B /* JSON2Plist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JSON2Plist.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE0CA23C13839360001D4B0B /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		FE0CA23F13839360001D4B0B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		FE0CA24013839360001D4B0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		FE0CA24113839360001D4B0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		FE0CA24413839360001D4B0B /* JSON2Plist-Info.plist */ = {isa = PBXFileReference; path = "JSON2Plist-Info.plist"; sourceTree = "<group>"; };
+		FE0CA24613839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FE0CA24813839360001D4B0B /* JSON2Plist-Prefix.pch */ = {isa = PBXFileReference; path = "JSON2Plist-Prefix.pch"; sourceTree = "<group>"; };
+		FE0CA24913839360001D4B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FE0CA24C13839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */ = {isa = PBXFileReference; path = JSON2PlistAppDelegate.h; sourceTree = "<group>"; };
+		FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSON2PlistAppDelegate.m; sourceTree = "<group>"; };
+		FE0CA25213839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE0CA23513839360001D4B0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0CA23D13839360001D4B0B /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE0CA22D13839360001D4B0B = {
+			isa = PBXGroup;
+			children = (
+				FE0CA24213839360001D4B0B /* JSON2Plist */,
+				FE0CA23B13839360001D4B0B /* Frameworks */,
+				FE0CA23913839360001D4B0B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE0CA23913839360001D4B0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA23813839360001D4B0B /* JSON2Plist.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE0CA23B13839360001D4B0B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA23C13839360001D4B0B /* Cocoa.framework */,
+				FE0CA23E13839360001D4B0B /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FE0CA23E13839360001D4B0B /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA23F13839360001D4B0B /* AppKit.framework */,
+				FE0CA24013839360001D4B0B /* CoreData.framework */,
+				FE0CA24113839360001D4B0B /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		FE0CA24213839360001D4B0B /* JSON2Plist */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */,
+				FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */,
+				FE0CA25113839360001D4B0B /* MainMenu.xib */,
+				FE0CA24313839360001D4B0B /* Supporting Files */,
+			);
+			path = JSON2Plist;
+			sourceTree = "<group>";
+		};
+		FE0CA24313839360001D4B0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FE0CA24413839360001D4B0B /* JSON2Plist-Info.plist */,
+				FE0CA24513839360001D4B0B /* InfoPlist.strings */,
+				FE0CA24813839360001D4B0B /* JSON2Plist-Prefix.pch */,
+				FE0CA24913839360001D4B0B /* main.m */,
+				FE0CA24B13839360001D4B0B /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE0CA23713839360001D4B0B /* JSON2Plist */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE0CA25613839360001D4B0B /* Build configuration list for PBXNativeTarget "JSON2Plist" */;
+			buildPhases = (
+				FE0CA23413839360001D4B0B /* Sources */,
+				FE0CA23513839360001D4B0B /* Frameworks */,
+				FE0CA23613839360001D4B0B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JSON2Plist;
+			productName = JSON2Plist;
+			productReference = FE0CA23813839360001D4B0B /* JSON2Plist.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE0CA22F13839360001D4B0B /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = FE0CA23213839360001D4B0B /* Build configuration list for PBXProject "JSON2Plist" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FE0CA22D13839360001D4B0B;
+			productRefGroup = FE0CA23913839360001D4B0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE0CA23713839360001D4B0B /* JSON2Plist */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE0CA23613839360001D4B0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0CA24713839360001D4B0B /* InfoPlist.strings in Resources */,
+				FE0CA24D13839360001D4B0B /* Credits.rtf in Resources */,
+				FE0CA25313839360001D4B0B /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE0CA23413839360001D4B0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE0CA24A13839360001D4B0B /* main.m in Sources */,
+				FE0CA25013839360001D4B0B /* JSON2PlistAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE0CA24513839360001D4B0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0CA24613839360001D4B0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		FE0CA24B13839360001D4B0B /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0CA24C13839360001D4B0B /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		FE0CA25113839360001D4B0B /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE0CA25213839360001D4B0B /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FE0CA25413839360001D4B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FE0CA25513839360001D4B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		FE0CA25713839360001D4B0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSON2Plist/JSON2Plist-Prefix.pch";
+				INFOPLIST_FILE = "JSON2Plist/JSON2Plist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		FE0CA25813839360001D4B0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JSON2Plist/JSON2Plist-Prefix.pch";
+				INFOPLIST_FILE = "JSON2Plist/JSON2Plist-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE0CA23213839360001D4B0B /* Build configuration list for PBXProject "JSON2Plist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0CA25413839360001D4B0B /* Debug */,
+				FE0CA25513839360001D4B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE0CA25613839360001D4B0B /* Build configuration list for PBXNativeTarget "JSON2Plist" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE0CA25713839360001D4B0B /* Debug */,
+				FE0CA25813839360001D4B0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE0CA22F13839360001D4B0B /* Project object */;
+}
