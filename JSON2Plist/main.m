@@ -3,7 +3,7 @@
 //  JSON2Plist
 //
 //  Created by sodas on 2011/5/18.
-//  Copyright 2011年 __MyCompanyName__. All rights reserved.
+//  Copyright 2011 NTU Mobile & HCI Research Lab. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>

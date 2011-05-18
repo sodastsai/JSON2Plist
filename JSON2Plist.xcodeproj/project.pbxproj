@@ -13,6 +13,7 @@
 		FE0CA24D13839360001D4B0B /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = FE0CA24B13839360001D4B0B /* Credits.rtf */; };
 		FE0CA25013839360001D4B0B /* JSON2PlistAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */; };
 		FE0CA25313839360001D4B0B /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = FE0CA25113839360001D4B0B /* MainMenu.xib */; };
+		FE0CA25B13839890001D4B0B /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = FE0CA25A13839890001D4B0B /* JSONKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON2PlistAppDelegate.h; sourceTree = "<group>"; };
 		FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSON2PlistAppDelegate.m; sourceTree = "<group>"; };
 		FE0CA25213839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		FE0CA25913839890001D4B0B /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		FE0CA25A13839890001D4B0B /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +85,8 @@
 		FE0CA24213839360001D4B0B /* JSON2Plist */ = {
 			isa = PBXGroup;
 			children = (
+				FE0CA25913839890001D4B0B /* JSONKit.h */,
+				FE0CA25A13839890001D4B0B /* JSONKit.m */,
 				FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */,
 				FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */,
 				FE0CA25113839360001D4B0B /* MainMenu.xib */,
@@ -127,6 +132,9 @@
 /* Begin PBXProject section */
 		FE0CA22F13839360001D4B0B /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "NTU Mobile & HCI Research Lab";
+			};
 			buildConfigurationList = FE0CA23213839360001D4B0B /* Build configuration list for PBXProject "JSON2Plist" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
@@ -164,6 +172,7 @@
 			files = (
 				FE0CA24A13839360001D4B0B /* main.m in Sources */,
 				FE0CA25013839360001D4B0B /* JSON2PlistAppDelegate.m in Sources */,
+				FE0CA25B13839890001D4B0B /* JSONKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
