@@ -19,6 +19,7 @@
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
     [convertButton setTarget:self];
     [convertButton setAction:@selector(convertButtonPressed)];
+    [targetPathField setStringValue:[[NSUserDefaults standardUserDefaults] objectForKey:@"OutputPath"]];
 }
 
 - (IBAction)convertButtonPressed:(id)sender {
@@ -26,11 +27,30 @@
     [statusLabel setTextColor:[NSColor blackColor]];
     [statusLabel setStringValue:@""];
     // Check path
-    if ([targetPathField stringValue]==nil || [[targetPathField stringValue] isEqualToString:@""]) {
+    NSString *path = [targetPathField stringValue];
+    if (path==nil || [path isEqualToString:@""]) {
         [statusLabel setTextColor:[NSColor redColor]];
         [statusLabel setStringValue:@"QQ. Where do you want to save?"];
         return;
     }
+    if (![[NSFileManager defaultManager] isWritableFileAtPath:[path stringByDeletingLastPathComponent]]) {
+        [statusLabel setTextColor:[NSColor redColor]];
+        [statusLabel setStringValue:@"QQ. Cannot write here."];
+        return;
+    }
+    if ([[NSFileManager defaultManager] fileExistsAtPath:path]) {
+        NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+        [formatter setDateFormat:@"Y-m-d-H-M-S"];
+        NSString *current = [formatter stringFromDate:[NSDate date]];
+        [formatter release];
+        
+        NSString *newPath = [NSString stringWithFormat:@"%@.%@.%@",
+                             [path stringByDeletingPathExtension],
+                             current,
+                             [path pathExtension]];
+        [[NSFileManager defaultManager] moveItemAtPath:path toPath:newPath error:nil];
+    }
+    
     // Convert Input
     NSString *input = [jsonInputField string];
     id rawResult = [input objectFromJSONString];
@@ -43,6 +63,9 @@
         [statusLabel setTextColor:[NSColor redColor]];
         [statusLabel setStringValue:@"QQ. It's not a valid JSON"];
     }
+    
+    // Save path for convinience
+    [[NSUserDefaults standardUserDefaults] setObject:path forKey:@"OutputPath"];
 }
 
 @end
