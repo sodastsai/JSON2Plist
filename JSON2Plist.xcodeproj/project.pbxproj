@@ -21,12 +21,12 @@
 		FE0CA23F13839360001D4B0B /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		FE0CA24013839360001D4B0B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		FE0CA24113839360001D4B0B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		FE0CA24413839360001D4B0B /* JSON2Plist-Info.plist */ = {isa = PBXFileReference; path = "JSON2Plist-Info.plist"; sourceTree = "<group>"; };
+		FE0CA24413839360001D4B0B /* JSON2Plist-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSON2Plist-Info.plist"; sourceTree = "<group>"; };
 		FE0CA24613839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		FE0CA24813839360001D4B0B /* JSON2Plist-Prefix.pch */ = {isa = PBXFileReference; path = "JSON2Plist-Prefix.pch"; sourceTree = "<group>"; };
+		FE0CA24813839360001D4B0B /* JSON2Plist-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JSON2Plist-Prefix.pch"; sourceTree = "<group>"; };
 		FE0CA24913839360001D4B0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		FE0CA24C13839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */ = {isa = PBXFileReference; path = JSON2PlistAppDelegate.h; sourceTree = "<group>"; };
+		FE0CA24E13839360001D4B0B /* JSON2PlistAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSON2PlistAppDelegate.h; sourceTree = "<group>"; };
 		FE0CA24F13839360001D4B0B /* JSON2PlistAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSON2PlistAppDelegate.m; sourceTree = "<group>"; };
 		FE0CA25213839360001D4B0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -239,6 +239,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSON2Plist/JSON2Plist-Prefix.pch";
 				INFOPLIST_FILE = "JSON2Plist/JSON2Plist-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -254,6 +255,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JSON2Plist/JSON2Plist-Prefix.pch";
 				INFOPLIST_FILE = "JSON2Plist/JSON2Plist-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
